@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navigation .links, .navigation, header .buttons, header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .links select, .navigation, header .buttons .register, header .buttons .login, header .buttons {
+  color: rgb(114, 111, 111);
+  font-weight: 500;
+}
+
+.navigation .links p:hover, .navigation .links select:hover, header .buttons .register:hover, header .buttons .login:hover {
+  color: rgb(48, 44, 44);
+}
+
+header {
+  justify-content: space-between;
+}
+header .buttons {
+  gap: 25px;
+}
+header .buttons .login {
+  border: 1px solid white;
+  padding: 0 0;
+  color: rgb(114, 111, 111);
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 12px;
+}
+header .buttons .register {
+  border: 1px solid white;
+  padding: 0 0;
+  color: rgb(114, 111, 111);
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 12px;
+}
+.navigation {
+  gap: 40px;
+}
+.navigation .links {
+  gap: 25px;
+}
+.navigation .links select {
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+}
+.navigation .links select:focus {
+  outline: none;
+}
+.navigation .links p {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=output.css.map */

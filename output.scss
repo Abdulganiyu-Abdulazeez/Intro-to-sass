@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$gray: rgb(114, 111, 111);
+
+@mixin button($border, $py, $px, $text, $bg, $size) {
+    border:  1px solid $border;
+    padding: $py $px;
+    color: $text;
+    text-decoration: none;
+    background-color: $bg;
+    font-size: $size;
+    border-radius: 12px;
+
+}
+%fexdisplay {
+    display: flex;
+    align-items: center;
+}
+
+%textstyle {
+    color: $gray;
+    font-weight: 500;
+}
+
+%hover {
+    color: rgb(48, 44, 44);
+}
+
+header {
+    @extend %fexdisplay;
+    justify-content: space-between;
+    .buttons {
+        @extend %fexdisplay, %textstyle;
+        gap: 25px;
+        .login {
+            @include button(white, 0, 0, $gray, transparent, 14px);
+            @extend %textstyle;
+        }
+        .login:hover {
+            @extend %hover;
+        }
+        .register {
+            @include button(white,0 ,0, $gray, transparent, 14px);
+            @extend %textstyle;
+        }
+        .register:hover {
+            @extend %hover;
+        }
+    }
+}
+
+.navigation {
+    @extend %fexdisplay, %textstyle;
+    gap: 40px;
+    .links {
+        @extend %fexdisplay;
+        gap: 25px;
+        select {
+            text-decoration: none;
+            border: none;
+            font-size: 14px;
+            @extend %textstyle;
+        }
+        select:focus {
+            outline: none;
+        }
+        select:hover {
+            @extend %hover;
+        }
+        p {
+            font-size: 14px;
+        }
+        p:hover {
+            @extend %hover;
+        }
+       
+    }
+
+}
