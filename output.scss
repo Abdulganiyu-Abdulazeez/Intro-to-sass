@@ -43,7 +43,7 @@ header {
             @extend %hover;
         }
         .register {
-            @include button(white,0 ,0, $gray, transparent, 14px);
+            @include button(black,12px ,20px, $gray,white, 14px);
             @extend %textstyle;
         }
         .register:hover {

@@ -33,11 +33,11 @@ header .buttons .login {
   border-radius: 12px;
 }
 header .buttons .register {
-  border: 1px solid white;
-  padding: 0 0;
+  border: 1px solid black;
+  padding: 12px 20px;
   color: rgb(114, 111, 111);
   text-decoration: none;
-  background-color: transparent;
+  background-color: white;
   font-size: 14px;
   border-radius: 12px;
 }
