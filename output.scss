@@ -50,7 +50,7 @@ header {
             @extend %hover;
         }
         .register {
-            @include button(black,12px ,20px, $gray, transparent, 14px);
+            @include button(white,0 ,0, $gray, transparent, 14px);
             @extend %textstyle;
         }
         .register:hover {
