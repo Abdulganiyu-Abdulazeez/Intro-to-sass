@@ -29,8 +29,15 @@ $gray: rgb(114, 111, 111);
     color: rgb(48, 44, 44);
 }
 
+body {
+    font-family: 'Epilogue', sans-serif;
+    // font-family: 'Lexend Deca', sans-serif;
+    // font-family: 'Livvic', sans-serif;
+}
+
 header {
     @extend %fexdisplay;
+    padding: 1rem;
     justify-content: space-between;
     .buttons {
         @extend %fexdisplay, %textstyle;
@@ -43,7 +50,7 @@ header {
             @extend %hover;
         }
         .register {
-            @include button(white,0 ,0, $gray, transparent, 14px);
+            @include button(black,12px ,20px, $gray, transparent, 14px);
             @extend %textstyle;
         }
         .register:hover {
@@ -79,4 +86,53 @@ header {
        
     }
 
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80vh;
+    
+    .text {
+        @extend %fexdisplay;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+        align-self: flex-end;
+        .topic {
+            width: 30rem;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 4rem;
+            @extend %hover
+            
+        }
+        .discuss{
+            width: 25rem;
+            color: $gray;
+            
+        }
+        .learn-more {
+            background-color: black;
+            padding: 12px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+    
+        .learn-more:hover {
+            @include button(black,12px ,20px, $gray, transparent, 14px);
+        }
+        .logos {
+            display: flex;
+            gap: 1rem;
+            img {
+                width: 6rem;
+                height: 2rem;
+            }
+        }
+    }
+    img {
+
+    }    
 }
